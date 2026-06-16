@@ -63,7 +63,7 @@ def fatorial(n):
     """Retorna o fatorial de n usando recursão."""
     if n == 1:  # BUG: deveria ser n == 0 ou n <= 1
         return 1
-    return n * fatorial(n - 1)
+    return n * fatorial(n <= 1)
 
 
 # ------------------------------------------------------------
