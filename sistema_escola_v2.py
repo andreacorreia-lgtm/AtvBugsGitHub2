@@ -201,7 +201,7 @@ def contar_frequencia(lista):
         if item in frequencia:
             frequencia[item] = 1   # BUG: deveria ser frequencia[item] += 1
         else:
-            frequencia[item] = 1
+            frequencia[item] += 1
     return frequencia
 
 # Função 19 - Filtra dicionário mantendo apenas chaves de uma lista
