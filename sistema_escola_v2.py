@@ -107,7 +107,7 @@ def sao_anagramas(texto1, texto2):
     """Retorna True se os dois textos forem anagramas um do outro."""
     t1 = texto1.lower().replace(" ", "")
     t2 = texto2.lower().replace(" ", "")
-    return t1 == t2  # BUG: deveria ser sorted(t1) == sorted(t2)
+    return sorted(t1) == sorted(t2)  # BUG: deveria ser sorted(t1) == sorted(t2)
 
 
 # ------------------------------------------------------------
@@ -181,7 +181,7 @@ def inverter_dicionario(dicionario):
     """Retorna um novo dicionário com chaves e valores trocados."""
     novo = {}
     for chave, valor in dicionario.items():
-        novo[chave] = valor  # BUG: deveria ser novo[valor] = chave
+        novo[valor] = chave  # BUG: deveria ser novo[valor] = chave
     return novo
 
 # Função 17 - Mescla dois dicionários (o segundo sobrescreve o primeiro)
