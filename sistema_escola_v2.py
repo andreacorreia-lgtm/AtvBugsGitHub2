@@ -151,7 +151,7 @@ def busca_binaria(lista_ordenada, alvo):
         elif lista_ordenada[meio] < alvo:
             inicio = meio + 1
         else:
-            fim = meio - 1
+          <=  fim = meio - 1
     return -1
 
 # Função 14 - Retorna os N maiores elementos de uma lista
